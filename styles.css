@@ -1,0 +1,12 @@
+/* styles.css */
+.navbar {
+    background-color: #4CAF50; /* Cor de fundo do menu */
+}
+
+.navbar-brand, .nav-link {
+    color: #FFFFFF !important; /* Cor do texto do menu */
+}
+
+.nav-link:hover {
+    color: #FFD700 !important; /* Cor do texto ao passar o mouse */
+}
