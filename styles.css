@@ -7,10 +7,11 @@ body {
 
 /* Container do logotipo */
 .logo-container {
-    background-color: #ffffff !important; /* Fundo branco para o logotipo */
-    text-align: left !important; /* logotipo à esquerda */
+    background-color: #ffffff !important; /* Fundo branco para o logotipo */    
     padding: 20px 0 !important; /* Espaçamento interno */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important; /* Sombra suave */
+    max-width: 1200px !important; /* Largura máxima do conteúdo centralizado */
+    margin: 0 auto !important; /* Centraliza o container */
 }
 
 /* Estilo para o logotipo */
