@@ -19,11 +19,11 @@ body {
 
 /* Estilo para o menu de navegação */
 .navbar {
+    background-color: #28334f !important; /* Cor de fundo escura para o menu */        
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important; /* Sombra suave */
 }
 
 .navbar .container {
-    background-color: #28334f !important; /* Cor de fundo escura para o menu */    
     max-width: 1200px !important; /* Largura máxima do conteúdo centralizado */
     margin: 0 auto !important; /* Centraliza o container */
 }
