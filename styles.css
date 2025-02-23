@@ -8,7 +8,7 @@ body {
 /* Container do logotipo */
 .logo-container {
     background-color: #ffffff !important; /* Fundo branco para o logotipo */
-    text-align: center !important; /* Centraliza o logotipo */
+    text-align: left !important; /* logotipo à esquerda */
     padding: 20px 0 !important; /* Espaçamento interno */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important; /* Sombra suave */
 }
