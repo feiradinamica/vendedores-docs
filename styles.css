@@ -19,7 +19,6 @@ body {
 
 /* Estilo para o menu de navegação */
 .navbar {
-    height: 20px !important;
     background-color: #28334f !important; /* Cor de fundo escura para o menu */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important; /* Sombra suave */
 }
