@@ -1,6 +1,15 @@
-/* styles.css */
+/* Estilos para o menu de navegação */
 .navbar {
-    background-color: #4CAF50; /* Cor de fundo do menu */ 
+    background-color: #4CAF50; /* Cor de fundo do menu */
+    padding: 10px 0; /* Espaçamento interno */
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between; /* Alinha o logo à esquerda e o menu à direita */
+    align-items: center; /* Centraliza verticalmente */
+    max-width: 1200px; /* Largura máxima do conteúdo centralizado */
+    margin: 0 auto; /* Centraliza o container */
 }
 
 .navbar-brand, .nav-link {
@@ -9,4 +18,16 @@
 
 .nav-link:hover {
     color: #FFD700 !important; /* Cor do texto ao passar o mouse */
+}
+
+/* Estilo para o logotipo */
+.logo {
+    height: 40px; /* Altura do logotipo */
+}
+
+/* Estilos para o conteúdo principal */
+.container {
+    max-width: 1200px; /* Largura máxima do conteúdo centralizado */
+    margin: 0 auto; /* Centraliza o container */
+    padding: 0 15px; /* Adiciona um pouco de padding nas laterais */
 }
