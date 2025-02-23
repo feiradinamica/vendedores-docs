@@ -14,7 +14,7 @@ body {
 
 /* Estilo para o logotipo */
 .logo {
-    height: 60px !important; /* Altura do logotipo */
+  max-height: 85px;
 }
 
 /* Estilo para o menu de navegação */
