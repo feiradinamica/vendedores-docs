@@ -14,12 +14,18 @@ body {
   max-height: 85px;
 }
 
+.menu-container {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 0 15px !important;
+}
+
 .navbar {
     background-color: #28334f !important;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
 }
 
-.navbar .container {
+.navbar .menu-container {
     max-width: 1200px !important;
     margin: 0 auto !important;
 }
@@ -30,12 +36,6 @@ body {
 
 .nav-link:hover {
     color: #FFD700 !important;
-}
-
-.menu-container {
-    max-width: 1200px !important;
-    margin: 0 auto !important;
-    padding: 0 15px !important;
 }
 
 .container {
