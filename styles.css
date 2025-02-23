@@ -1,13 +1,30 @@
-/* Estilos para o menu de navegação */
+/* Estilo para o fundo da página */
+body {
+    background-color: #f8f9fa; /* Cor de fundo clara (igual às laterais) */
+    margin: 0;
+    padding: 0;
+}
+
+/* Container do logotipo */
+.logo-container {
+    background-color: #ffffff; /* Fundo branco para o logotipo */
+    text-align: center; /* Centraliza o logotipo */
+    padding: 20px 0; /* Espaçamento interno */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilo para o logotipo */
+.logo {
+    height: 60px; /* Altura do logotipo */
+}
+
+/* Estilo para o menu de navegação */
 .navbar {
-    background-color: #4CAF50; /* Cor de fundo do menu */
-    padding: 10px 0; /* Espaçamento interno */
+    background-color: #343a40; /* Cor de fundo escura para o menu */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
 .navbar .container {
-    display: flex;
-    justify-content: space-between; /* Alinha o logo à esquerda e o menu à direita */
-    align-items: center; /* Centraliza verticalmente */
     max-width: 1200px; /* Largura máxima do conteúdo centralizado */
     margin: 0 auto; /* Centraliza o container */
 }
@@ -20,12 +37,7 @@
     color: #FFD700 !important; /* Cor do texto ao passar o mouse */
 }
 
-/* Estilo para o logotipo */
-.logo {
-    height: 40px; /* Altura do logotipo */
-}
-
-/* Estilos para o conteúdo principal */
+/* Estilo para o conteúdo principal */
 .container {
     max-width: 1200px; /* Largura máxima do conteúdo centralizado */
     margin: 0 auto; /* Centraliza o container */
