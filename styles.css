@@ -5,9 +5,8 @@ body {
     padding: 0;
 }
 
-/*Novo Container do logotipo */
-.logo-container {
-    background-color: #ffffff !important; /* Fundo branco para o logotipo */    
+/*Container do logotipo - */
+.logo-container {    
     padding: 20px 0 !important; /* Espaçamento interno */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important; /* Sombra suave */
     max-width: 1200px !important; /* Largura máxima do conteúdo centralizado */
