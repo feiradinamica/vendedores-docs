@@ -1,44 +1,39 @@
-/* Estilo para o fundo da página */
 body {
     background-color: #f8f9fa !important; /* Cor de fundo clara */
     margin: 0;
     padding: 0;
 }
 
-/*Container logotipo*/
 .logo-container {      
     padding: 20px 15px !important; /* Espaçamento interno */
     max-width: 1200px !important; /* Largura máxima do conteúdo centralizado */
     margin: 0 auto !important; /* Centraliza o container */
 }
 
-/* Estilo para o logotipo */
 .logo {
   max-height: 85px;
 }
 
-/* Estilo para o menu de navegação */
 .navbar {
-    background-color: #28334f !important; /* Cor de fundo escura para o menu */        
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important; /* Sombra suave */
+    background-color: #28334f !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
 }
 
 .navbar .container {
-    max-width: 1200px !important; /* Largura máxima do conteúdo centralizado */
-    margin: 0 auto !important; /* Centraliza o container */
+    max-width: 1200px !important;
+    margin: 0 auto !important;
 }
 
 .navbar-brand, .nav-link {
-    color: #FFFFFF !important; /* Cor do texto do menu */
+    color: #FFFFFF !important;
 }
 
 .nav-link:hover {
-    color: #FFD700 !important; /* Cor do texto ao passar o mouse */
+    color: #FFD700 !important;
 }
 
-/* Estilo para o conteúdo principal */
 .container {
-    max-width: 1200px !important; /* Largura máxima do conteúdo centralizado */
-    margin: 0 auto !important; /* Centraliza o container */
-    padding: 0 15px !important; /* Adiciona um pouco de padding nas laterais */
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 15px 15px !important;
 }
