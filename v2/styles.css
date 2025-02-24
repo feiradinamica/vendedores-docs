@@ -1,52 +1,65 @@
-/*22:51*/
 body {
     background-color: #e9ecef !important;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #28334f;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
 }
 
 .logo-container {
-    padding: 20px 15px !important;
-    max-width: 1200px !important;
-    margin: 0 auto !important;
-    text-align: left; /* Alinha o logotipo à esquerda */
+    margin-bottom: 20px;
 }
 
 .logo {
     max-height: 85px;
 }
 
-.navbar {
-    display: flex !important;
-    justify-content: flex-start !important; /* Alinha o conteúdo à esquerda */
-    align-items: center !important; /* Centraliza verticalmente */
-    background-color: #28334f !important;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;    
-}
-
-.navbar .menu-container {
-    width: 100%; /* Ocupa toda a largura disponível */
-    max-width: 1200px !important; /* Largura máxima do conteúdo */
-    margin: 0 auto !important; /* Centraliza o container */
-    padding: 0 15px !important;
-    text-align: left; /* Alinha o texto à esquerda */    
-}
-
 .navbar-nav {
-    margin-left: 0 !important; /* Remove a margem padrão do Bootstrap */
-    padding-left: 0 !important; /* Remove o padding padrão do Bootstrap */
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
-.navbar-brand, .nav-link {
+.nav-item {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.nav-link {
     color: #FFFFFF !important;
     transition: color 0.3s ease;
-    font-weight: 400 !important; /* Fonte mais magrinha (fina) */
-    font-size: 18px !important; /* Tamanho da fonte maior */    
+    font-weight: 400 !important;
+    font-size: 18px !important;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: left;
+    width: 100%;
+    display: block;
 }
 
 .nav-link:hover {
-    color: #FFD700 !important;
+    background-color: #FFD700;
+    color: #28334f !important;
+}
+
+.main-content {
+    margin-left: 250px;
+    width: calc(100% - 250px);
+    padding: 20px;
 }
 
 .container {
@@ -71,4 +84,34 @@ h2 {
 video {
     border-radius: 8px;
     margin-top: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .navbar-nav {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .nav-item {
+        margin-bottom: 0;
+    }
+
+    .logo-container {
+        margin-bottom: 0;
+    }
 }
