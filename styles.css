@@ -1,3 +1,4 @@
+/*22:34*/
 body {
     background-color: #e9ecef !important;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -17,15 +18,24 @@ body {
 }
 
 .navbar {
+    display: flex !important;
+    justify-content: flex-start !important; /* Alinha o conteúdo à esquerda */
+    align-items: center !important; /* Centraliza verticalmente */
     background-color: #28334f !important;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;    
 }
 
 .navbar .menu-container {
-    max-width: 1200px !important;
-    margin: 0 auto !important;
+    width: 100%; /* Ocupa toda a largura disponível */
+    max-width: 1200px !important; /* Largura máxima do conteúdo */
+    margin: 0 auto !important; /* Centraliza o container */
     padding: 0 15px !important;
-    text-align: left; /* Alinha o menu à esquerda */
+    text-align: left; /* Alinha o texto à esquerda */    
+}
+
+.navbar-nav {
+    margin-left: 0 !important; /* Remove a margem padrão do Bootstrap */
+    padding-left: 0 !important; /* Remove o padding padrão do Bootstrap */
 }
 
 .navbar-brand, .nav-link {
