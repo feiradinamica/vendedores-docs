@@ -41,7 +41,8 @@ body {
 .navbar-brand, .nav-link {
     color: #FFFFFF !important;
     transition: color 0.3s ease;
-    font-weight: bold !important; /* Adiciona negrito ao texto do menu */    
+    font-weight: 400 !important; /* Fonte mais magrinha (fina) */
+    font-size: 18px !important; /* Tamanho da fonte maior */    
 }
 
 .nav-link:hover {
