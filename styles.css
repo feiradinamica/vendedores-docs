@@ -1,58 +1,130 @@
-/*22:51*/
 body {
-    background-color: #e9ecef !important;
+    background-color: #e9ecef;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
+    display: flex;
 }
 
+/* Faixa horizontal no topo */
+.top-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #28334f;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Menu de Navegação Lateral */
+.sidebar {
+    width: 250px;
+    background-color: #FFFFFF;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0; /* Menu sempre visível em telas grandes */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+    transition: left 0.3s ease;
+    z-index: 999;
+}
+
+.sidebar.active {
+    left: 0; /* Mostra o menu ao ativar */
+}
+
+
+/* Botão Hamburger */
+.hamburger {
+    display: none; /* Escondido por padrão */
+    flex-direction: column;
+    justify-content: space-evenly;	
+    width: 35px;
+    height: 30px;
+    background: #ffffff; /* Fundo branco */
+    border: none;
+    cursor: pointer;
+    padding: 2; /* Removemos o padding interno */
+    margin-bottom: 20px;
+    position: fixed;
+    top: 15px;
+    left: 10px;
+    z-index: 1001;
+    border-radius: 4px; /* Bordas arredondadas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Sombra sutil */
+}
+
+.hamburger span {
+    width: 100%;
+    height: 3px;
+    background-color: #28334f;
+    transition: all 0.3s ease;
+    transform-origin: center; /* Garante que a animação do "X" seja centralizada */
+}
+
+/* Animação do "X" */
+.hamburger.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
 .logo-container {
-    padding: 20px 15px !important;
-    max-width: 1200px !important;
-    margin: 0 auto !important;
-    text-align: left; /* Alinha o logotipo à esquerda */
+    margin-bottom: 20px;
 }
 
 .logo {
     max-height: 85px;
 }
 
-.navbar {
-    display: flex !important;
-    justify-content: flex-start !important; /* Alinha o conteúdo à esquerda */
-    align-items: center !important; /* Centraliza verticalmente */
-    background-color: #28334f !important;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;    
-}
-
-.navbar .menu-container {
-    width: 100%; /* Ocupa toda a largura disponível */
-    max-width: 1200px !important; /* Largura máxima do conteúdo */
-    margin: 0 auto !important; /* Centraliza o container */
-    padding: 0 15px !important;
-    text-align: left; /* Alinha o texto à esquerda */    
-}
-
 .navbar-nav {
-    margin-left: 0 !important; /* Remove a margem padrão do Bootstrap */
-    padding-left: 0 !important; /* Remove o padding padrão do Bootstrap */
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
-.navbar-brand, .nav-link {
-    color: #FFFFFF !important;
+.nav-item {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.nav-link {
+    color: #28334f !important;
     transition: color 0.3s ease;
-    font-weight: 400 !important; /* Fonte mais magrinha (fina) */
-    font-size: 18px !important; /* Tamanho da fonte maior */    
+    font-weight: 500;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: left;
+    width: 100%;
+    display: block;
 }
 
 .nav-link:hover {
     color: #FFD700 !important;
 }
 
+.main-content {
+    margin-left: 0;
+    width: 100%;
+    padding: 40px 20px;
+    transition: margin-left 0.3s ease;
+}
+
 .container {
-    max-width: 1200px !important;
-    margin: 0 auto !important;
-    padding: 15px 15px !important;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
 }
 
 section {
@@ -71,4 +143,32 @@ h2 {
 video {
     border-radius: 8px;
     margin-top: 10px;
+}
+
+/* Conteúdo Principal */
+.main-content {
+    margin-left: 250px; /* Margem para telas grandes */
+    width: calc(100% - 250px); /* Ajusta a largura para compensar a margem */
+    padding: 40px 20px;
+    transition: margin-left 0.3s ease;
+}
+
+/* Ajustes para telas menores (até 768px) */
+@media (max-width: 768px) {
+    .main-content {
+        margin-left: 0; /* Remove a margem em telas menores */
+        width: 100%; /* Ocupa toda a largura */
+    }
+
+    .sidebar {
+        left: -250px; /* Menu escondido por padrão em telas menores */
+    }
+
+    .sidebar.active {
+        left: 0; /* Mostra o menu ao ativar em telas menores */
+    }
+
+    .hamburger {
+        display: flex; /* Mostra o botão de hambúrguer em telas menores */		
+    }
 }
