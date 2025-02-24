@@ -7,8 +7,8 @@ body {
 
 .logo-container {
     padding: 20px 15px !important;
-    max-width: 1200px !important; /* Largura máxima do conteúdo */
-    margin: 0 auto !important; /* Centraliza o container */
+    max-width: 1200px !important;
+    margin: 0 auto !important;
     text-align: left; /* Alinha o logotipo à esquerda */
 }
 
@@ -22,8 +22,8 @@ body {
 }
 
 .navbar .menu-container {
-    max-width: 1200px !important; /* Largura máxima do conteúdo */
-    margin: 0 auto !important; /* Centraliza o container */
+    max-width: 1200px !important;
+    margin: 0 auto !important;
     padding: 0 15px !important;
     text-align: left; /* Alinha o menu à esquerda */
 }
