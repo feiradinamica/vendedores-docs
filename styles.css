@@ -20,12 +20,6 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
 }
 
-.menu-container {
-    max-width: 1200px !important;
-    margin: 0 !important; /* Remove a margem automática */
-    padding: 0 15px !important;
-}
-
 .navbar .menu-container {
     max-width: 1200px !important;
     margin: 0 !important; /* Remove a margem automática */
