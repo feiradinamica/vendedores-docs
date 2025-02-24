@@ -1,4 +1,4 @@
-/*22:34*/
+/*22:39*/
 body {
     background-color: #e9ecef !important;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -41,6 +41,7 @@ body {
 .navbar-brand, .nav-link {
     color: #FFFFFF !important;
     transition: color 0.3s ease;
+    font-weight: bold !important; /* Adiciona negrito ao texto do menu */    
 }
 
 .nav-link:hover {
