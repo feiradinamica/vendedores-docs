@@ -1,19 +1,20 @@
 body {
-    background-color: #f8f9fa !important; /* Cor de fundo clara */
+    background-color: #e9ecef !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-.logo-container {      
-    padding: 20px 15px !important; /* Espaçamento interno */
-    max-width: 1200px !important; /* Largura máxima do conteúdo centralizado */
-    margin: 0 auto !important; /* Centraliza o container */
+.logo-container {
+    padding: 20px 15px !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    text-align: center;
 }
 
 .logo {
-  max-height: 85px;
+    max-height: 85px;
 }
-
 
 .navbar {
     background-color: #28334f !important;
@@ -22,12 +23,13 @@ body {
 
 .navbar .menu-container {
     max-width: 1200px !important;
-    margin: 0 !important; /* Remove a margem automática */
+    margin: 0 auto !important;
     padding: 0 15px !important;
 }
 
 .navbar-brand, .nav-link {
     color: #FFFFFF !important;
+    transition: color 0.3s ease;
 }
 
 .nav-link:hover {
@@ -38,4 +40,22 @@ body {
     max-width: 1200px !important;
     margin: 0 auto !important;
     padding: 15px 15px !important;
+}
+
+section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #28334f;
+    margin-bottom: 15px;
+}
+
+video {
+    border-radius: 8px;
+    margin-top: 10px;
 }
